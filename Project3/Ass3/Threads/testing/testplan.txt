@@ -1,0 +1,9 @@
+Test Plan E
+In this test plan, it randomly chooses a value between 0 and 4999 and allocates that much memory, and then frees it right after. This is to check if the program can actually print an error when asked for more memory than what is available. It will also make sure that the free function is working properly whenever it is mallocing a memory size that is valid. 
+
+Test Plan F
+In this test plan, it mallocs we allocate memory of 1 byte 150 times and free all of it. We then call free again for 150 times to check if the program can catch if the user is deallocating a pointer more than once.
+
+
+Both of these test plans are prone to prompting errors because in Part E the random value maybe over the maximum memory limit. In Part F it will prompt an error that we are sending in a null pointer because it was freed earlier.
+
